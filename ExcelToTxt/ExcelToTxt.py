@@ -7,8 +7,8 @@ ws = wb.active
 # start_data为Excel表数据真正开始的行，end_data为结束的行
 # 当end_data为负数的时候，表示到文件的末尾
 limit = 1
-start_data = 50
-end_data = 60
+start_data = 2
+end_data = -1
 
 if (end_data>0 and end_data>=ws.max_row) or end_data<0:
     row_all = ws.max_row - start_data + 1
